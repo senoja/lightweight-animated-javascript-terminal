@@ -1,0 +1,23 @@
+{
+  "name": "lightweight-animated-js-terminal",
+  "version": "1.0.0",
+  "description": "a lightweight javascript terminal animation utility",
+  "main": "dist/lightweight-animated-javascript-terminal.js",
+  "module": "lightweight-animated-javascript-terminal.js",
+  "devDependencies": {
+      "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "build": "parcel build lightweight-animated-javascript-terminal.js --global Terminal",
+    "example": "parcel serve example/index.html"
+  },
+  "browserslist": [
+    "since 2017-06"
+  ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/senoja/lightweight-animated-javascript-terminal.git"
+  },
+  "author": "Anthony Jones",
+  "license": "MIT"
+}

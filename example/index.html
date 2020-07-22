@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>lightweight animated javascript terminal</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <div id="shell" class="terminal shell" style="margin-top: 4em;">
+      <code data-term-input>mkdir example</code>
+      <code>mkdir: example/: File exists</code>
+      <code data-term-input>cd example</code>
+      <code data-term-input>vim package.json</code>
+    </div>
+    <div id="editor" class="terminal editor" style="margin-top: 4em; opacity: 0;">
+      <code data-term-input>{</code>
+      <code data-term-input>  "name": "my-package",</code>
+      <code data-term-input>  "version": "0.1.0",</code>
+      <code data-term-input>  "main": "dist/my-package.js"</code>
+      <code data-term-input>}</code>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>

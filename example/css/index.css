@@ -1,0 +1,76 @@
+:root {
+  --background: #F3E9D2;
+  --muted: #887880;
+  --prompt: #50fa7b;
+  --terminal: #282a36;
+  --text: #D9D3D7;
+}
+
+body {
+  background-color: var(--background); 
+}
+
+.terminal {
+  background-color: var(--terminal);
+  border-radius:3px;
+  color: var(--text);
+  display: block;
+  font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+  font-size: 1em;
+  font-smooth: antialiased;
+  line-height: 1.2em;
+  padding: 1em;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.terminal code {
+  display: block;
+}
+
+.editor {
+  counter-reset: line;
+}
+
+.editor code:before {
+  color: var(--prompt);
+  content: counter(line);
+  counter-increment: line;
+  margin-right: 0.5em;
+}
+
+[data-term-replay] {
+  bottom: 0px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.5em;
+  padding: 1em 2em;
+  position: absolute;
+  right: 0px;
+}
+
+[data-term-replay]:hover {
+  color: var(--text);
+}
+
+.shell [data-term-input]:before {
+  color: var(--prompt);
+  content: '$';
+  margin-right: 0.5em;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+[data-term-cursor]:after {
+    content: '_';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%{opacity: 0;}
+  50%{opacity: .9;}
+  100%{opacity: 1;}
+}
