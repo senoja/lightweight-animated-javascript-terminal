@@ -2,9 +2,9 @@
 
 A tiny module to animate some HTML `<code>` as a terminal shell or editor.
 
-![Screenshot](img/img.png)
-
 ![Animated GIF](img/gif.gif)
+
+![Screenshot](img/img.png)
 
 ## Usage
 

@@ -12,7 +12,7 @@ const editor = Terminal({
 
 const shell = Terminal({
   containerSelector: "#shell",
-  delay: { start: 2000 },
+  delay: { start: 3000 },
   replayable: false,
   callback: () => {
     const s = document.querySelector("#shell");
