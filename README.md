@@ -1,12 +1,19 @@
 # lightweight-animated-javascript-terminal
 
-A tiny module to animate some HTML `<code>` as a terminal shell or editor.
-
 ![Animated GIF](img/gif.gif)
+
+A tiny module to animate some HTML `<code>` as a terminal shell or editor.
 
 ![Screenshot](img/img.png)
 
 ## Usage
+
+```shell
+npm install lightweight-animated-js-terminal
+# or
+yarn add lightweight-animated-js-terminal
+```
+```
 
 Write and style your terminal session as a container and with a `<code>` tag for each line.
 
